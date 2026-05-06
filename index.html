@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feria Ganadera</title>
+
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div>🐄 Feria Ganadera</div>
+<div>
+<a href="#info">Info</a>
+<a href="#grimaldi">Grimaldi</a>
+<a href="#galeria">Galería</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>Feria Ganadera</h1>
+<p>Venta de hacienda y carne directa del productor</p>
+<a href="#info" class="btn">Ver más</a>
+</div>
+</div>
+
+<!-- INFO -->
+<section id="info">
+<h2>Sobre la Feria</h2>
+<p>
+Evento dedicado a la comercialización de ganado vacuno y productos cárnicos.
+Se promueve la venta directa entre productores y compradores.
+</p>
+</section>
+
+<!-- GRIMALDI -->
+<section id="grimaldi">
+<h2>Grimaldi Remates Feria</h2>
+
+<p>
+Grimaldi Remates Feria S.A. es una empresa consignataria dedicada a la organización
+de remates ganaderos en Argentina. Cuenta con una larga trayectoria acompañando
+al productor agropecuario en la comercialización de hacienda.
+</p>
+
+<div class="grid">
+
+<div class="card">🐄 Remates de ganado (vacas, toros e invernada)</div>
+<div class="card">📍 Eventos en Córdoba y región</div>
+<div class="card">📧 feriasg@lafrancia.com.ar</div>
+<div class="card">📈 Más de 80 años de trayectoria</div>
+
+</div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+<h2>Galería</h2>
+
+<p>Solo organizadores pueden subir imágenes</p>
+
+<input type="email" id="email" placeholder="Ingresar email">
+
+<button onclick="verificar()">Verificar</button>
+
+<br>
+
+<input type="file" id="file" disabled>
+
+<p id="mensaje"></p>
+
+<img id="preview">
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Feria Ganadera Municipal • contacto@feria.com</p>
+</footer>
+
+</body>
+</html>
