@@ -1,7 +1,5 @@
-/* EMAILS AUTORIZADOS */
 const permitidos = [
-"admin@feria.com",
-"grimaldi@feria.com"
+"admin@lafov.com"
 ];
 
 function verificar(){
@@ -12,7 +10,7 @@ const mensaje = document.getElementById("mensaje");
 
 if(permitidos.includes(email)){
 file.disabled = false;
-mensaje.innerText = "✅ Podés subir imágenes";
+mensaje.innerText = "✅ Acceso permitido";
 mensaje.style.color = "green";
 }else{
 file.disabled = true;
@@ -21,14 +19,14 @@ mensaje.style.color = "red";
 }
 }
 
-/* PREVIEW */
 document.getElementById("file").addEventListener("change", function(e){
 
-const preview = document.getElementById("preview");
+const contenedor = document.getElementById("galeria-contenido");
 
 if(e.target.files[0]){
-preview.src = URL.createObjectURL(e.target.files[0]);
-preview.style.display = "block";
+const img = document.createElement("img");
+img.src = URL.createObjectURL(e.target.files[0]);
+contenedor.appendChild(img);
 }
 
 });

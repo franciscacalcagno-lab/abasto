@@ -4,88 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Feria Ganadera</title>
+<title>LAFOV</title>
 
-<link rel="stylesheet" href="./style.css">
-<script src="./script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<div>🐄 Feria Ganadera</div>
-<div>
-<a href="#info">Info</a>
-<a href="#grimaldi">Grimaldi</a>
-<a href="#galeria">Galería</a>
-</div>
+<nav class="nav">
+    <div class="logo">LAFOV</div>
+    <div class="links">
+        <a href="#inicio">Inicio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+    </div>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-<div class="hero-content">
-<h1>Feria Ganadera</h1>
-<p>Venta de hacienda y carne directa del productor</p>
-<a href="#info" class="btn">Ver más</a>
-</div>
-</div>
+<header class="hero" id="inicio">
+    <div class="hero-content">
+        
+        <h1>LAFOV</h1>
+        <p>Villa María • Producción Ganadera</p>
+    </div>
+</header>
 
-<!-- INFO -->
-<section id="info">
-<h2>Sobre la Feria</h2>
-<p>
-Evento dedicado a la comercialización de ganado vacuno y productos cárnicos.
-Se promueve la venta directa entre productores y compradores.
-</p>
+<section id="empresa" class="section">
+    <h2>Sobre la empresa</h2>
+    <p>
+        Empresa dedicada al desarrollo ganadero, enfocada en la producción,
+        comercialización y crecimiento del sector agropecuario.
+    </p>
 </section>
 
-<!-- GRIMALDI -->
-<section id="grimaldi">
-<h2>Grimaldi Remates Feria</h2>
+<section id="servicios" class="section bg">
+    <h2>Servicios</h2>
 
-<p>
-Grimaldi Remates Feria S.A. es una empresa consignataria dedicada a la organización
-de remates ganaderos en Argentina. Cuenta con una larga trayectoria acompañando
-al productor agropecuario en la comercialización de hacienda.
-</p>
-
-<div class="grid">
-
-<div class="card">🐄 Remates de ganado (vacas, toros e invernada)</div>
-<div class="card">📍 Eventos en Córdoba y región</div>
-<div class="card">📧 feriasg@lafrancia.com.ar</div>
-<div class="card">📈 Más de 80 años de trayectoria</div>
-
-</div>
+    <div class="grid">
+        <div class="card">🐄 Comercialización de hacienda</div>
+        <div class="card">📊 Asesoramiento agropecuario</div>
+        <div class="card">🚜 Servicios rurales</div>
+        <div class="card">📦 Producción ganadera</div>
+    </div>
 </section>
 
-<!-- GALERIA -->
-<section id="galeria">
-<h2>Galería</h2>
+<section id="galeria" class="section">
+    <h2>Galería</h2>
 
-<p>Solo organizadores pueden subir imágenes</p>
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="verificar()">Verificar</button>
 
-<input type="email" id="email" placeholder="Ingresar email">
+    <input type="file" id="file" disabled>
 
-<button onclick="verificar()">Verificar</button>
+    <p id="mensaje"></p>
 
-<br>
-
-<input type="file" id="file" disabled>
-
-<p id="mensaje"></p>
-
-<img id="preview">
-
+    <div id="galeria-contenido" class="galeria"></div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p>Feria Ganadera Municipal • contacto@feria.com</p>
+    <p>© LAFOV - Villa María</p>
 </footer>
 
 </body>
