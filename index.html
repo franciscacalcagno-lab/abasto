@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abasto Zeta</title>
 
-<title>LAFOV</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<nav class="nav">
-    <div class="logo">LAFOV</div>
-    <div class="links">
-        <a href="#inicio">Inicio</a>
-        <a href="#empresa">Empresa</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
+  <!-- NAV -->
+  <header>
+    <h2 class="logo">ABASTO ZETA</h2>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Soluciones de Abastecimiento Inteligente</h1>
+      <p>Automatizá tus pedidos, reducí errores y hacé crecer tu negocio.</p>
+      <button>Comenzar ahora</button>
     </div>
-</nav>
+  </section>
 
-<header class="hero" id="inicio">
-    <div class="hero-content">
-        
-        <h1>LAFOV</h1>
-        <p>Villa María • Producción Ganadera</p>
-    </div>
-</header>
-
-<section id="empresa" class="section">
-    <h2>Sobre la empresa</h2>
-    <p>
-        Empresa dedicada al desarrollo ganadero, enfocada en la producción,
-        comercialización y crecimiento del sector agropecuario.
-    </p>
-</section>
-
-<section id="servicios" class="section bg">
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section">
     <h2>Servicios</h2>
-
-    <div class="grid">
-        <div class="card">🐄 Comercialización de hacienda</div>
-        <div class="card">📊 Asesoramiento agropecuario</div>
-        <div class="card">🚜 Servicios rurales</div>
-        <div class="card">📦 Producción ganadera</div>
+    <div class="cards">
+      <div class="card">
+        <h3>Gestión de pedidos</h3>
+        <p>Organizá y automatizá tus compras de forma rápida.</p>
+      </div>
+      <div class="card">
+        <h3>Control de stock</h3>
+        <p>Monitoreá en tiempo real tu inventario.</p>
+      </div>
+      <div class="card">
+        <h3>Conexión con proveedores</h3>
+        <p>Accedé a múltiples proveedores en un solo lugar.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="galeria" class="section">
-    <h2>Galería</h2>
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="section dark">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>✔ Ahorro de tiempo</li>
+      <li>✔ Menos errores</li>
+      <li>✔ Mayor control</li>
+      <li>✔ Plataforma simple y rápida</li>
+    </ul>
+  </section>
 
-    <input type="email" id="email" placeholder="Email">
-    <button onclick="verificar()">Verificar</button>
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>¿Querés mejorar tu negocio? Escribinos.</p>
+    <button onclick="mostrarMensaje()">Contactar</button>
+  </section>
 
-    <input type="file" id="file" disabled>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Abasto Zeta - Todos los derechos reservados</p>
+  </footer>
 
-    <p id="mensaje"></p>
-
-    <div id="galeria-contenido" class="galeria"></div>
-</section>
-
-<footer>
-    <p>© LAFOV - Villa María</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,32 +1,18 @@
-const permitidos = [
-"admin@lafov.com"
-];
-
-function verificar(){
-
-const email = document.getElementById("email").value;
-const file = document.getElementById("file");
-const mensaje = document.getElementById("mensaje");
-
-if(permitidos.includes(email)){
-file.disabled = false;
-mensaje.innerText = "✅ Acceso permitido";
-mensaje.style.color = "green";
-}else{
-file.disabled = true;
-mensaje.innerText = "❌ No autorizado";
-mensaje.style.color = "red";
-}
+function mostrarMensaje() {
+  alert("Gracias por tu interés. Pronto nos contactaremos con vos.");
 }
 
-document.getElementById("file").addEventListener("change", function(e){
+// Animación simple al hacer scroll
+const cards = document.querySelectorAll(".card");
 
-const contenedor = document.getElementById("galeria-contenido");
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const position = card.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
 
-if(e.target.files[0]){
-const img = document.createElement("img");
-img.src = URL.createObjectURL(e.target.files[0]);
-contenedor.appendChild(img);
-}
-
+    if (position < screenPosition) {
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }
+  });
 });
